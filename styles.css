@@ -1,0 +1,367 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #004d99;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Container */
+/* Container with 3D Background */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.FRFSaw6KRROkFMSy-4h-YgHaEK&pid=Api&P=0&h=180'); /* Set your 3D background image here */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Create a parallax scrolling effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    border-radius: 10px; /* Optional: Rounded corners */
+    transform-style: preserve-3d; /* Enable 3D transformation */
+    perspective: 1000px; /* Add perspective to create a 3D effect */
+}
+
+/* Add optional styles to enhance the 3D effect */
+.container:hover {
+    transform: rotateY(5deg); /* Slight 3D tilt on hover */
+    transition: transform 0.5s ease; /* Smooth transition for hover effect */
+}
+
+
+
+/* Header */
+header {
+    background: linear-gradient(to right, #003366, #004d99); /* Gradient background */
+    color: #fff;
+    padding: 30px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center the text */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center all items */
+    align-items: center; /* Align items vertically in the center */
+    position: relative; /* For absolute positioning of profile image */
+    border-bottom: 5px solid #ffcc00; /* Decorative border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+/* Header Text */
+.header-text {
+    margin: 0 auto; /* Center text block horizontally */
+    padding-left: 180px; /* Space for profile image */
+}
+
+.header-text h1 {
+    color: #ffcc00; /* Highlighted color for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for better readability */
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Profile Image */
+.profile-image {
+    position: absolute; /* Position the image absolutely */
+    top: 20px; /* Space from the top */
+    left: 20px; /* Space from the left */
+    margin: 0; /* Remove any default margin */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular profile image */
+    border: 4px solid #fff; /* White border around image */
+    object-fit: cover; /* Ensure the image covers the area */
+    transition: transform 0.8s ease; /* Smooth transition for the zoom effect */
+}
+
+/* Zoom Effect on Hover */
+.profile-image img:hover {
+    transform: scale(1.1); /* Scale up the image to 110% of its original size */
+}
+
+/* Header Text */
+header h1, header p {
+    margin: 0; /* Remove default margin */
+}
+
+header h1 {
+    font-size: 2.5em; /* Larger font size for the name */
+    font-family: 'Roboto', sans-serif; /* Stylish font */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+header p {
+    font-size: 1.2em; /* Slightly larger font size for emphasis */
+    font-family: 'Roboto', sans-serif; /* Consistent font style */
+    margin: 5px 0; /* Space around the paragraphs */
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px; /* Space between text and social links */
+}
+
+.social-links a {
+    color: #ffcc00;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2em; /* Larger font size for social links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.social-links a:hover {
+    color: #d8a108; /* Highlight color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+
+/* About Section */
+section {
+    background: linear-gradient(to right, #003366, #004d99); /* Gradient background */
+    color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Extra padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    margin: 20px 0;
+    position: relative; /* For absolute positioning of text-shadow */
+}
+
+/* Add text-shadow to headings and paragraphs */
+section h2 {
+    color: #ffcc00; /* Highlighted color for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for better readability */
+    margin-bottom: 20px;
+}
+
+section p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for paragraphs */
+    line-height: 1.8; /* Improved line height for readability */
+    font-size: 1.1em; /* Slightly larger font size for emphasis */
+    color:#003366;
+    background: hwb(0 96% 2% / 0.93); /* Semi-transparent background for better contrast */
+    padding: 20px; /* Extra padding */
+    border-radius: 8px; /* Rounded corners for the paragraph background */
+    margin-top: 20px; /* Spacing above the paragraph */
+}
+
+/* Add a subtle animation effect to the paragraph */
+section p:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+h2 {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Projects & Experience */
+.project-item, .experience-item {
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #dee5ec;
+}
+
+/* Header */
+header {
+    background-color: #004d99;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center; /* Align text to the left */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space out elements */
+    align-items: center; /* Align items vertically in the center */
+}
+
+header h1, header p {
+    margin-left: 20px; /* Add some margin to the text for spacing */
+}
+
+/* Profile Image */
+.profile-image {
+    margin-right: 20px; /* Add some margin to the right for spacing */
+    overflow: hidden; /* Hide any overflow to ensure the zoom effect stays within the circle */
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    border: 4px solid #fff; /* Add a white border around the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    transition: transform 0.8s ease; /* Smooth transition for the zoom effect */
+}
+
+/* Zoom Effect on Hover */
+.profile-image img:hover {
+    transform: scale(1.1); /* Scale up the image to 110% of its original size */
+}
+
+/* Logos */
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Horizontal Scroll Container */
+.scroll-container {
+    display: flex; /* Arrange items in a row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scroll effect */
+    padding: 20px;
+    position: relative; /* For positioning the arrows */
+}
+
+/* Scroll Arrow */
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background: #004d99;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Hide scrollbar for the horizontal scroll container */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Experience Item */
+.experience-item {
+    flex: 0 0 auto; /* Prevent items from shrinking or growing */
+    width: 300px; /* Adjust width as needed */
+    margin-right: 20px;
+    padding: 20px;
+    background: #1e36ba;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.certificate-link {
+    margin-top: 20px;
+}
+
+.certificate-link a {
+    color: #dfe7cf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certificate-link a:hover {
+    text-decoration: underline;
+}
+.project-link a {
+    color: #c0dc09;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
